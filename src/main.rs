@@ -7,7 +7,7 @@ fn main() {
     const H: usize = 50;
     let mut arr = [[" "; W]; H];
     let mut flag = 0;
-    const LETTERS = ".,/)(><^?_+-%':&][#$!abcdefghijklmnopqrstuvwxyzABCDIFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    const LETTERS:&str = ".,/)(><^?_+-%':&][#$!abcdefghijklmnopqrstuvwxyzABCDIFGHIJKLMNOPQRSTUVWXYZ0123456789";
     let _chars : Vec<&str> = LETTERS.split_inclusive(|_| { true }).collect();
     loop {
         println!("\x1b[H");
